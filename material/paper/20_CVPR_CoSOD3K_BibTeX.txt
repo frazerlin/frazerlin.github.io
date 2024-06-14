@@ -1,0 +1,7 @@
+@inproceedings{CVPR_2020_COSOD3K,
+    title={Taking a Deeper Look at Co-Salient Object Detection},
+    author={Fan, Deng-Ping and Lin, Zheng and Ji, Ge-Peng and Zhang, Dingwen and Fu, Huazhu and Cheng, Ming-Ming},
+    booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
+    pages={2919--2929},
+    year={2020}
+}

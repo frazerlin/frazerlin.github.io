@@ -1,0 +1,9 @@
+@article{TPAMI_2022_CoEGNet,
+    title={Re-thinking Co-Salient Object Detection},
+    author={Fan, Deng-Ping and Li, Tengpeng and Lin, Zheng and Ji, Ge-Peng and Zhang, Dingwen and Cheng, Ming-Ming and Fu, Huazhu and Shen, Jianbing},
+    journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+    volume={44},
+    number={8},
+    pages={4339--4354},
+    year={2022}
+}

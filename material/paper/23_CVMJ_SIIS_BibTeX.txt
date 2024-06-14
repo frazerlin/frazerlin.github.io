@@ -1,0 +1,9 @@
+@article{CVMJ_2023_SIIS,
+    title={Sequential Interactive Image Segmentation},
+    author={Lin, Zheng and Zhang, Zhao and Zhu, Zi-Yue and Fan, Deng-Ping and Liu, Xia-Lei},
+    journal={Computational Visual Media},
+    volume={9},
+    number={4},
+    pages={753--765},
+    year={2023}
+}

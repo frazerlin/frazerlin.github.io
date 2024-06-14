@@ -1,0 +1,7 @@
+@inproceedings{ACMMM_2022_KnifeCut,
+    title={KnifeCut: Refining Thin Part Segmentation with Cutting Lines},
+    author={Lin, Zheng and Duan, Zheng-Peng and Zhang, Zhao and Guo, Chun-Le and Cheng, Ming-Ming},
+    booktitle={ACM International Conference on Multimedia},
+    pages={809--817},
+    year={2022}
+}

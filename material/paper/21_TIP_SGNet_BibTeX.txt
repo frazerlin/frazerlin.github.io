@@ -1,0 +1,8 @@
+@article{TIP_2021_SGNet,
+    title={Spatial Information Guided Vonvolution for Real-Time RGBD Semantic Segmentation},
+    author={Chen, Lin-Zhuo and Lin, Zheng and Wang, Ziqin and Yang, Yong-Liang and Cheng, Ming-Ming},
+    journal={IEEE Transactions on Image Processing},
+    volume={30},
+    pages={2313--2324},
+    year={2021}
+}

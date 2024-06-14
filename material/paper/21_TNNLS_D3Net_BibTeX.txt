@@ -1,0 +1,9 @@
+@article{TNNLS_2020_D3Net,
+    title={Rethinking RGB-D Salient Object Detection: Models, Data Sets, and Large-Scale Benchmarks},
+    author={Fan, Deng-Ping and Lin, Zheng and Zhang, Zhao and Zhu, Menglong and Cheng, Ming-Ming},
+    journal={IEEE Transactions on Neural Networks and Learning Systems},
+    volume={32},
+    number={5},
+    pages={2075--2089},
+    year={2021}
+}
