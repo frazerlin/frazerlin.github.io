@@ -1,0 +1,6 @@
+@article{CVMJ_2025_IST,
+    title={User-Oriented Interactive Style Transfer},
+    author={Lin, Zheng and Zhang, Zhao and Zhang, Kang-Rui and Ren, Bo and Cheng, Ming-Ming},
+    journal={Computational Visual Media},
+    year={2025}
+}

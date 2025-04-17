@@ -1,0 +1,6 @@
+@article{CAAIAIR_2025_BC,
+    title={Minimize Quantization Output Error with Bias Compensation},
+    author={Gong, Cheng and Zheng, Haoshuai and Hu, Mengting and Lin, Zheng and Fan, Deng-Ping and Zhang, Yuzhi and Li, Tao},
+    journal={arXiv preprint arXiv:2404.01892},
+    year={2024}
+}

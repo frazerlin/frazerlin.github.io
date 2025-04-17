@@ -1,0 +1,6 @@
+@article{TPAMI_2025_RefCOD,
+    title={Referring camouflaged object detection},
+    author={Zhang, Xuying and Yin, Bowen and Lin, Zheng and Hou, Qibin and Fan, Deng-Ping and Cheng, Ming-Ming},
+    journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+    year={2025}
+}

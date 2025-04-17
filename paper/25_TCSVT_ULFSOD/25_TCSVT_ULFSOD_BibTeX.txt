@@ -1,0 +1,6 @@
+@article{TCSVT_2025_ULFSOD,
+    title={Unsupervised Salient Object Detection on Light Field with High-Quality Synthetic Labels},
+    author={Zheng, Yanfeng and Luo, Zhong and Cao, Ying and Yang, Xiaosong and Xu, Weiwei and Lin, Zheng and Yin, Nan and Wang, Pengjie},
+    journal={IEEE Transactions on Circuits and Systems for Video Technology},
+    year={2025}
+}

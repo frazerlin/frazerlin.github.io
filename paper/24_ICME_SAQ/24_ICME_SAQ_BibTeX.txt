@@ -1,0 +1,7 @@
+@inproceedings{ICME_2024_SAQ,
+    title={No-Reference Segmentation Annotation Quality Assessment},
+    author={Lin, Zheng and Duan, Zheng-Peng and Zhang, Xuying and Lin, Luojun},
+    booktitle={IEEE International Conference on Multimedia and Expo},
+    pages={1--6},
+    year={2024}
+}

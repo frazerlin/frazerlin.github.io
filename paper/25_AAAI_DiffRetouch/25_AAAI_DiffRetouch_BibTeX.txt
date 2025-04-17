@@ -1,0 +1,6 @@
+@inproceedings{AAAI_2025_DiffRetouch,
+  title={DiffRetouch: Using Diffusion to Retouch on the Shoulder of Experts},
+  author={Duan, Zheng-Peng and Zhang, Jiawei and Lin, Zheng and Jin, Xin and Wang XunDong and Zou, Dongqing and Guo, Chun-Le and Li, Chongyi},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2025}
+}

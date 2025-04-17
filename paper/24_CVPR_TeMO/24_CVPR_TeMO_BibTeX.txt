@@ -1,0 +1,7 @@
+@inproceedings{CVPR_2024_TeMO,
+    title={Temo: Towards text-driven 3d stylization for multi-object meshes},
+    author={Zhang, Xuying and Yin, Bo-Wen and Chen, Yuming and Lin, Zheng and Li, Yunheng and Hou, Qibin and Cheng, Ming-Ming},
+    booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
+    pages={19531--19540},
+    year={2024}
+}

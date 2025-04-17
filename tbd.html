@@ -8,7 +8,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="./material/favicon.ico" type="image/x-icon" />
-    <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    	<link rel="stylesheet" href="./material/lz.css">
 </head>
@@ -26,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link nav-diy" href="./publication.html">Publication
+                        <a class="nav-link" href="./publication.html">Publication
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
@@ -36,7 +35,7 @@
                         </a>
                     </li>
 					<li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle nav-diy" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Course
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -49,67 +48,23 @@
     </nav>
 
     <div class="container">
-        <!-- Publications -->
+
+        <!-- Group -->
         <section class="row mt-3"> 
 			<div class="col-md-12">
-				<h2 class="text-center mt-4 mb-4" title="(*) Equal contribution; (#) Corresponding author">Selected Publications </h2>
-				<!-- <p class="text-center"> (*) Equal contribution; (#) Corresponding author; (IF/SCI/JCR) The value correspond to the publication year </p> -->
-				<div id="paper-container"></div>
+				<h1 class="text-center mt-4 mb-4">TBD</h1>	
+			</div>
         </section>
     </div>
 
-
-
-
-	<script>
-        const paperList = [
-        //"25_CAAIAIR_BC",
-        "25_TPAMI_RefCOD",
-        "25_CVMJ_IST",
-        //"25_TCSVT_ULFSOD",
-        //"25_AAAI_AdderSal",
-        "25_AAAI_DiffOOM",
-        "25_AAAI_DiffRetouch",
-        "24_ICME_SAQ",
-		"24_ICME_SlowFast",
-        "24_CVPR_TeMO",
-        "23_CVMJ_SIIS",
-        "23_TPAMI_CoRP",
-        "22_CVPR_FocusCut",
-        "22_ACMMM_KnifeCut",
-		"22_ACMMM_MMIIS",
-        "22_TPAMI_SalSem",
-        "22_TPAMI_CoEGNet",
-        "21_TIP_BiANet",
-        "21_TIP_SGNet",
-        "21_TNNLS_D3Net",
-		"20_CVPR_FCANet",
-		"20_CVPR_CoSOD3K",
-        ];
-	
-		(async () => {
-		const container = document.getElementById("paper-container");
-		for (const id of paperList) {
-			try {
-			const html = await fetch(`./paper/${id}/${id}.html`).then(res => res.text());
-			container.insertAdjacentHTML("beforeend", html);
-			} catch (e) {
-			console.error(`Failed to load ${id}:`, e);
-			}
-		}
-		})();
-	</script>
-  
-
-  
-
-    <!-- <footer class="py-2 bg-dark mt-4">
+		
+    <footer class="py-2 bg-dark mt-4">
         <div class="container">
             <a href="https://beian.miit.gov.cn" target="_blank">
                 <p class="m-0 text-center text-white">© Zheng Lin </p>
             </a>
         </div>
-    </footer> -->
+    </footer>
 
 		
     <!-- Optional JavaScript -->

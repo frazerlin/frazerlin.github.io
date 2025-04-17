@@ -1,0 +1,7 @@
+@inproceedings{ICME_2024_SlowFast,
+    title={Slow-Fast Adaptation for Source-Free Object Detection},
+    author={Lin, Luojun and Liu, Qipeng and Zheng, Xiangwei and Lin, Zheng},
+    booktitle={IEEE International Conference on Multimedia and Expo},
+    pages={1--6},
+    year={2024}
+}
