@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading...</title>
+  <script>
+    window.onload = function() {
+      // 当前路径
+      const path = window.location.pathname.toLowerCase();
+
+      // 路由关键词和对应跳转目标
+      const routes = {
+        "fclick": "https://github.com/frazerlin/fcanet",
+        "focuscut": "https://github.com/frazerlin/focuscut"
+      };
+
+      // 查找匹配的关键词
+      for (const key in routes) {
+        if (path.includes(key)) {
+          window.location.replace(routes[key]);
+          return;
+        }
+      }
+
+      // 如果没有匹配任何关键词，跳转到主页
+      window.location.replace("https://linzheng.github.io/");
+    };
+  </script>
+</head>
+<body>
+  <p>Loading...</p>
+</body>
+</html>
