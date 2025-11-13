@@ -2,32 +2,36 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>Loading...</title>
+  <title>页面跳转中...</title>
+</head>
+<body>
+  <p>正在跳转，请稍候...</p>
   <script>
-    window.onload = function() {
-      // 当前路径
+    (function() {
+      // 获取访问路径
       const path = window.location.pathname.toLowerCase();
 
-      // 路由关键词和对应跳转目标
+      // ✅ 路由规则：关键词 -> 外部网址
       const routes = {
-        "fclick": "https://github.com/frazerlin/fcanet",
-        "focuscut": "https://github.com/frazerlin/focuscut"
+        "baidu": "https://www.baidu.com/",
+        "zhihu": "https://www.zhihu.com/",
+        "github": "https://github.com/",
+        "bilibili": "https://www.bilibili.com/"
       };
 
-      // 查找匹配的关键词
+      // 遍历匹配关键词
       for (const key in routes) {
         if (path.includes(key)) {
-          window.location.replace(routes[key]);
+          console.log(`匹配关键词：${key}，跳转到 ${routes[key]}`);
+          window.location.href = routes[key];
           return;
         }
       }
 
-      // 如果没有匹配任何关键词，跳转到主页
-      window.location.replace("https://linzheng.github.io/");
-    };
+      // 没有匹配任何关键词 → 跳转主页
+      console.log("未匹配关键词，跳转主页");
+      window.location.href = "https://www.lin-zheng.com/";
+    })();
   </script>
-</head>
-<body>
-  <p>Loading...</p>
 </body>
 </html>
