@@ -1,6 +1,9 @@
 @inproceedings{AAAI_2025_AdderSal,
-  title={Exploring Salient Object Detection with Adder Neural Networks},
+  title={Exploring salient object detection with adder neural networks},
   author={Yin, Bo-Wen and Lin, Zheng},
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={9},
+  pages={9490--9498},
   year={2025}
 }

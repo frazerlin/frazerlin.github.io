@@ -13,7 +13,6 @@
    	<link rel="stylesheet" href="./material/lz.css">
 </head>
 
-	
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -54,44 +53,42 @@
 			<div class="col-md-12">
 				<h2 class="text-center mt-4 mb-4" title="(*) Equal contribution; (#) Corresponding author">Selected Publications </h2>
 				<!-- <p class="text-center"> (*) Equal contribution; (#) Corresponding author; (IF/SCI/JCR) The value correspond to the publication year </p> -->
+
+                <div class="row justify-content-center mb-3">
+                    <div class="col-12 col-md-4">
+                        <div class="btn-group w-100" role="group">
+                            <button id="btn-all" class="btn btn-dark w-50" onclick="render('all'); this.blur();">
+                                All Author
+                            </button>
+                            <button id="btn-main" class="btn btn-outline-dark w-50" onclick="render('main'); this.blur();">
+                                Main Author
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
 				<div id="paper-container"></div>
         </section>
     </div>
 
 
-
-
-	<script>
-        const paperList = [
-        //"25_ACMMM_S2RCOD",
-        //"25_CAAIAIR_BC",
-        "25_TPAMI_RefCOD",
-        "25_CVMJ_IST",
-        //"25_TCSVT_ULFSOD",
-        "25_AAAI_AdderSal",
-        "25_AAAI_DiffOOM",
-        //"25_AAAI_DiffRetouch",
-        "24_ICME_SAQ",
-		//"24_ICME_SlowFast",
-        "24_CVPR_TeMO",
-        "23_CVMJ_SIIS",
-        "23_TPAMI_CoRP",
-        "22_CVPR_FocusCut",
-        "22_ACMMM_KnifeCut",
-		"22_ACMMM_MMIIS",
-        "22_TPAMI_SalSem",
-        "22_TPAMI_CoEGNet",
-        "21_TIP_BiANet",
-        "21_TIP_SGNet",
-        "21_TNNLS_D3Net",
-		"20_CVPR_FCANet",
-		"20_CVPR_CoSOD3K",
-        "23_THESIS_Doctor",
-        ];
-	
+	<!-- <script>
 		(async () => {
+        const text = await (await fetch('./material/paper_list.txt')).text();
+        const [FirstAuthor = [], CorrAuthor = [], CoopAuthor = []] = text
+            .split(/\n\s*\n/)                       
+            .map(g => g.split('\n')                 
+                .map(l => l.trim())                   
+                .filter(l => l && !l.startsWith('//'))); 
+
+        const MainAuthor = [...FirstAuthor, ...CorrAuthor];
+        const AllAuthor = [...MainAuthor, ...CoopAuthor];
+
+        MainAuthor.sort((a, b) => parseInt(b) - parseInt(a));
+        AllAuthor.sort((a, b) => parseInt(b) - parseInt(a));
+
 		const container = document.getElementById("paper-container");
-		for (const id of paperList) {
+		for (const id of AllAuthor) {
 			try {
 			const html = await fetch(`./paper/${id}/${id}.html`).then(res => res.text());
 			container.insertAdjacentHTML("beforeend", html);
@@ -100,10 +97,52 @@
 			}
 		}
 		})();
-	</script>
-  
+	</script> -->
 
-  
+
+	<script>
+        let mainAuthor = [];
+        let allAuthor = [];
+
+		(async () => {
+        const text = await (await fetch('./material/paper_list.txt')).text();
+        const [firstAuthor = [], corrAuthor = [], coopAuthor = []] = text
+            .split(/\n\s*\n/)                       
+            .map(g => g.split('\n')                 
+                .map(l => l.trim())                   
+                .filter(l => l && !l.startsWith('#'))
+                .map(l => l.startsWith('@') ? l.slice(1) : l)); 
+
+        mainAuthor = [...firstAuthor, ...corrAuthor].sort((a, b) => parseInt(b) - parseInt(a));
+        allAuthor = [...mainAuthor, ...coopAuthor].sort((a, b) => parseInt(b) - parseInt(a));
+
+        render('all');
+        })();
+
+        async function render(type) {
+            const container = document.getElementById("paper-container");
+            container.innerHTML = "";
+
+            let paperList = type === 'main' ? mainAuthor : allAuthor;
+
+            document.getElementById("btn-all").className =
+                type === "all" ? "btn btn-dark w-50" : "btn btn-outline-dark w-50";
+
+            document.getElementById("btn-main").className =
+                type === "main" ? "btn btn-dark w-50" : "btn btn-outline-dark w-50";
+            
+            paperList = [...paperList, "23_THESIS_Doctor"];
+
+            for (const id of paperList) {
+                try {
+                    const html = await fetch(`./paper/${id}/${id}.html`).then(res => res.text());
+                    container.insertAdjacentHTML("beforeend", html);
+                } catch (e) {
+                    console.error(`Failed to load ${id}:`, e);
+                }
+            }
+        }
+	</script>
 
     <!-- <footer class="py-2 bg-dark mt-4">
         <div class="container">

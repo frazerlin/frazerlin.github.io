@@ -1,7 +1,7 @@
-@inproceedings{ACMMM_2022_MMIIS,
-    title={Multi-Mode Interactive Image Segmentation},
-    author={Lin, Zheng and Zhang, Zhao and Han, Ling-Hao and Lu, Shao-Ping},
-    booktitle={ACM International Conference on Multimedia},
-    pages={905--914},
-    year={2025}
+@inproceedings{ACMMM_2025_S2RCOD,
+  title={Synthetic-to-Real Camouflaged Object Detection},
+  author={Luo, Zhihao and Lin, Luojun and Lin, Zheng},
+  booktitle={Proceedings of the 33rd ACM International Conference on Multimedia},
+  pages={8369--8378},
+  year={2025}
 }

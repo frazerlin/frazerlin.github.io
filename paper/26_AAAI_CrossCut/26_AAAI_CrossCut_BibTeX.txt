@@ -1,0 +1,6 @@
+@inproceedings{AAAI_2026_CrossCut,
+  title={A diffusion-based framework for occluded object movement},
+  author={Lin, Zheng and Zhou, Nan and Wang, Yuhan and Zhang, Bojian},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2026}
+}

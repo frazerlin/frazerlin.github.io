@@ -1,6 +1,9 @@
 @inproceedings{AAAI_2025_DiffOOM,
-  title={A Diffusion-Based Framework for Occluded Object Movement},
+  title={A diffusion-based framework for occluded object movement},
   author={Duan, Zheng-Peng and Zhang, Jiawei and Liu, Siyu and Lin, Zheng and Guo, Chun-Le and Zou, Dongqing and Ren, Jimmy and Li, Chongyi},
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={3},
+  pages={2816--2824},
   year={2025}
 }
